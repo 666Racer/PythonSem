@@ -14,16 +14,17 @@
 # 3 - поиск по фамилии
 # 4 - выход
 
-# import os
+# Задача 38: Дополнить телефонный справочник возможностью изменения и удаления данных.
+# Пользователь также может ввести фамилию, и Вы должны реализовать функционал для изменения и удаления данных
 
+import os
 from alghoritm import *
 from work_w_file import *
+clear = lambda: os.system('cls' if os.name=='nt' else 'clear')
+
 
 while True:
-    # os.system('cls' if os.name == 'nt' else 'clear')
-
+    clear()
     print_instructions()
-    choose(input("Введите команду 1, 2, 3 или -1"))
-    input("Введите enter чтобы продолжить")
-# clear = lambda: os.system('cls' if os.name=='nt' else 'clear')
-# clear()
+    choose(input("Введите команду 1, 2, 3, 4, 5 или -1: "))
+    input("Введите enter чтобы продолжить: ")
