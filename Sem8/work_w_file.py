@@ -34,7 +34,7 @@ def change_line (old_tag, new_tag):
             if old_tag in line:
                 line = line.replace(old_tag, new_tag)
             f.write(line)
-        print("Данные были удалены")
+        print("Данные были изменены")
 
 
 def choose(choice):
