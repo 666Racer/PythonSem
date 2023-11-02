@@ -12,9 +12,9 @@ if (d >= 0):
 x1 = p/y1
 x2 = p/y2
 
-if (x1, y1 >= 1000) and (int(x1) == x1) and (int(y1) == y1):
-    print (f"Число X, загаднное Петей, равно {int(x1)}, число Y - {int(y1)}")
-elif (x2, y2 >= 1000) and (int(x2) == x2) and (int(y2) == y2):
+if x1 <= 1000 and y1 <= 1000 and int(x1) == x1 and int(y1) == y1:
+    print (f"Число X, аднное Петей, равно {int(x1)}, число Y - {int(y1)}")
+elif x2 <= 1000 and y2 <= 1000 and int(x2) == x2 and int(y2) == y2:
     print (f"Число X, загаднное Петей, равно {int(x2)}, число Y - {int(y2)}")
 else:
     print("Одно или оба из чисел не натуральные или больше 1000")
