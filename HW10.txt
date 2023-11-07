@@ -1,0 +1,11 @@
+human = []
+robot = []
+for i in range (len(lst)):
+	if lst[i] == 'human':
+		human.append ('1')
+		robot.append ('0')
+	elif lst[i] == 'robot':
+		human.append ('0')
+		robot.append ('1')
+dataNew = pd.DataFrame({'human': human, 'robot': robot})
+dataNew.head(20)
