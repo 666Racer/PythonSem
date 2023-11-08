@@ -3,7 +3,7 @@ from note import Note
 from datetime import datetime
 
 class Notebook(object):
-    def input_note(self): # Создание класса с листом для хранения заметок
+    def __init__(self): # Создание класса с листом для хранения заметок
         self.new_list = []
 
     def recording_to_file(self): # Запись в файл

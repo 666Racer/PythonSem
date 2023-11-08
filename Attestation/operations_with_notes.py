@@ -2,7 +2,7 @@ from note import Note
 from save_note import Notebook
 from datetime import datetime
 class Operations(object):
-    def input_note(self): # Инициализация текущего класса
+    def __init__(self): # Инициализация текущего класса
         self.new_book = Notebook() # Иниацилизация класса хранения заметок и записи в файл
         self.new_book.save_note() # Перезапись данных из предыдущего запуска программы в новый лист и файл
 

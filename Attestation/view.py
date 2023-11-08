@@ -17,7 +17,7 @@ class Start(object):
     input_id = ("\n Введите ID заметки -> ")
     input_date = ("\n Введите дату (в формате ДД-ММ-ГГГГ) для выборки заметок -> ")
     
-    def input_note(self): # Инициализатор текущего класса
+    def __init__(self): # Инициализатор текущего класса
         self.main = Operations()
     
     def choose(self):
@@ -45,7 +45,7 @@ class Start(object):
                 flag2 = True
                 self.main.read_notes()
                 input_note = int(input(self.input_id))
-                if(self.main.print_by_id(input_note) == True): # Если заметка с заданым id существует
+                if (self.main.print_by_id(input_note) == True): # Если заметка с заданым id существует
                     while flag2: # Дополнительный цикл для выбора редактируемого поля
                         change_choice = int(input(self.menu_change))
                         if change_choice == 1: # Редактирование заголовка заметки
